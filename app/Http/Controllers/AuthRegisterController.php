@@ -21,6 +21,5 @@ class AuthRegisterController extends Controller
 
         return redirect()->route('success',$data['name']);
 
-
     }
 }

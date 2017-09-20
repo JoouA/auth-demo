@@ -16,7 +16,6 @@ class Mailer
 
         echo "sendEmail";
 
-//        Mail::send()
         Mail::send($view,$data,function($message) use($user,$subject){
                 $message->to($user->email)->subject($subject);
         } );

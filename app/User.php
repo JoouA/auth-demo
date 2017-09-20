@@ -34,6 +34,7 @@ class User extends Authenticatable
         $user = static::create($attributes);
 
         //调用event
+        //调用了event事件之后，就会调用listener事件
         event(new UserRegistered($user));
 
     }

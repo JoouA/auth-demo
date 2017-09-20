@@ -36,6 +36,10 @@ class AuthRegister
         return new PrivateChannel('channel-name');
     }
 
+    /**
+     *  add新增的方法用来获取当前的用户对象的
+     * @return User
+     */
     public function get(){
         return $this->user;
     }
